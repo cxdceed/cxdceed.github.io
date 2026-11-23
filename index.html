@@ -22,15 +22,6 @@
   a{color:inherit;text-decoration:none}
   button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
-  /* blueprint guides */
-  .guides{position:fixed;inset:0;pointer-events:none;z-index:0}
-  .guides::before,.guides::after{content:"";position:absolute;top:0;bottom:0;width:24px;
-    background:repeating-linear-gradient(-45deg,transparent 0 5px,rgba(255,255,255,.035) 5px 6px);
-    border-left:1px solid var(--line);border-right:1px solid var(--line)}
-  .guides::before{left:calc(50% - var(--col)/2 - 24px)}
-  .guides::after{left:calc(50% + var(--col)/2)}
-  @media (max-width:720px){.guides{display:none}}
-
   .page{position:relative;z-index:1;max-width:var(--col);margin:0 auto;padding:0 20px}
   @media (min-width:721px){.page{padding:0}}
 
@@ -208,7 +199,6 @@
 </style>
 </head>
 <body>
-<div class="guides" aria-hidden="true"></div>
 
 <!-- MENU -->
 <div class="menu" id="menu">
